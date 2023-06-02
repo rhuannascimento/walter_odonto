@@ -1,0 +1,168 @@
+body{
+    margin: 0;
+    height: auto;
+    width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.teste{
+    height: 1000px;
+}
+
+@font-face {
+    font-family: "Nixie";
+    src: url("./assets/font/NixieOne-Regular.ttf");
+}
+
+
+.navbar{
+    height: 90px;
+    width: 100%;
+    background-color: #050a30d0;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.267);
+
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+    column-gap: 500px;
+
+    padding: 0px 100px 0px 100px;
+
+    position: fixed;
+    top: 0;
+
+}
+
+.navbarLogo{
+    height: 50px;
+}
+
+.navbarLinks{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.navbarLinks a{
+    font-size: 25px;
+    font-family: "Nixie";
+    text-decoration: none;
+    color: #FFFFFF;
+    transition: transform 0.2s ease-in-out;
+}
+
+.navbarLinks a:hover{
+    transform: scale(1.01);
+}
+
+.welcomeBox{
+    width: 100%;
+    height: 600px;
+}
+
+.welcomeText{
+    height: 98%;
+    width: 98%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    color: #FFFFFF;
+    font-family: "Nixie";
+    row-gap: 7px;
+    font-size: 30pt;
+    font-weight: 400;
+    background-color: #050a3010;
+    padding: 5px;
+}
+
+.welcomeBoxTransistion{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size:cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+    background-attachment: fixed;
+}
+
+.buttonBox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20px;
+    cursor: pointer;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 20px;
+}
+
+.buttonBox button{
+    font-family: "Nixie";
+    font-weight: 900;
+    font-size: 15px;
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+}
+
+.buttonBox:active{
+    transform: scale(0.98);
+}
+
+.focusBox{
+    z-index: 2;
+    padding: 80px 80px 80px 80px;
+    display: flex;
+    column-gap: 300px;
+}
+
+.focusRightImg{
+    height: 600px;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 1px 1px 8px rgba(0, 0, 0, 0.164);
+    transition: transform 0.5s ease-in-out;
+}
+
+.focusBox span{
+    font-family: Nixie;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: left;
+}
+
+.focusLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   align-items: flex-start;
+   row-gap: 50px;
+}
+
+.focusLeftImg{
+    height: 120px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.focusLeftImg:hover, .focusRightImg:hover{
+    transform: scale(1.02);
+}
+
+.servicesBox{
+    background-color: #050A30;
+    height: 500px;
+    background-attachment: fixed;
+}
