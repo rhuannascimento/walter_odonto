@@ -16,7 +16,6 @@ body{
     src: url("./assets/font/NixieOne-Regular.ttf");
 }
 
-
 .navbar{
     height: 90px;
     width: 100%;
@@ -137,7 +136,7 @@ body{
 }
 
 .focusBox span{
-    font-family: Nixie;
+    font-family: "Nixie";
     font-size: 30px;
     font-weight: 500;
     line-height: 40px;
@@ -162,7 +161,68 @@ body{
 }
 
 .servicesBox{
-    background-color: #050A30;
+    background-color: #FFFFFF;
+    height: 800px;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.151);
+    z-index: 2;
+}
+
+.servicesTitle{
+    font-family: "Nixie";
+    color: #050A30;
+    font-size: 60px;
+    text-decoration: overline;
+    border-radius: 0px 10px 0px 10px;
+}
+
+
+.carousel{
+    width: 900px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.24);
+}
+
+
+.d-block{
+    width: 900px;
     height: 500px;
+}
+
+.clinic{
+    background-image: url("./assets/img/consultorio.JPG");
     background-attachment: fixed;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clinicFadeBox{
+    font-size: 50px;
+    opacity: 0;
+    transition: opacity 2s ease;
+    width: 600px;
+    font-size: 25px;
+    padding: 20px;
+    background-color: #050a307e;
+    font-family: "Nixie";
+    color: #FFFFFF;
+    font-weight: 500;
+    text-align: center;
+}
+
+.clinicFadeBox.active{
+    opacity: 1;
+}
+
+@media screen and (max-width: 500px){
+
+    
+
 }

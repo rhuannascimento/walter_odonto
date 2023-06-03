@@ -20,3 +20,26 @@ document.addEventListener("DOMContentLoaded", function() {
       }, 3000);       
 
   });
+
+
+  document.addEventListener("DOMContentLoaded", function() {
+    var fadeInElements = document.querySelectorAll(".clinicFadeBox");
+    
+    function fadeIn() {
+      fadeInElements.forEach(function(element) {
+        var elementTop = element.getBoundingClientRect().top;
+        var elementBottom = element.getBoundingClientRect().bottom;
+        var isVisible = (elementTop < window.innerHeight && elementBottom >= 0);
+        
+        if (isVisible) {
+          element.classList.add("active");
+        }
+      });
+    }
+    
+    window.addEventListener("scroll", fadeIn);
+    window.addEventListener("resize", fadeIn);
+    
+    fadeIn();
+  });
+  
