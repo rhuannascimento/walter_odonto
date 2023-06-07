@@ -357,6 +357,70 @@ body{
 
 @media screen and (max-width: 500px){
 
+    .navbar{
+       flex-direction: column;
+       width: 100%;
+       height: auto;
+       column-gap: 0px;
+       padding: 5px;
+    }
+
+    .welcomeText{
+        text-align: center;
+    }
+
+    .welcomeBoxTransistion{
+        background-position: center;
+    }
+
+    .focusBox{
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        padding: 40px;
+    }
+
+    .focusRightImg{
+        width: 300px;
+        height: 300px;
+    }
+
+    .focusLeft{
+        flex-direction: column-reverse;
+        row-gap: 20px;
+    }
+
+    .focusLeftImg{
+        align-self: center;
+    }
+
+    .focusLeft span{
+        max-height: 300px;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: justify;
+    }
+
+    .servicesTitle{
+        font-size: 40px;
+    }
     
+    .d-block{
+        height: 200px;
+    }
+
+    .carousel-caption p, h5{
+        font-size: 10px;
+        padding: 5px;
+    }
+
+    .carousel-caption h5{
+        margin-bottom: -2px;
+    }
+
+    .carousel-caption p{
+        margin-bottom: -5px;
+    }
 
 }

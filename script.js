@@ -1,10 +1,26 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
+  
     var images = [
       "./assets/img/welcome/img1.JPG",
       "./assets/img/welcome/img2.JPG",
       "./assets/img/welcome/img3.JPG",
       "./assets/img/welcome/img4.JPG",
     ];
+
+    if(window.innerWidth<=500){
+      var images = [
+        "./assets/img/welcome/img1sub.JPG",
+        "./assets/img/welcome/img2.JPG",
+        "./assets/img/welcome/img3.JPG",
+        "./assets/img/welcome/img4.JPG",
+      ];
+
+      document.querySelector(".focusRightImg").src = './assets/img/focusMobile.JPG';
+
+
+    }
+
     var index = 0;
     var layers = document.querySelectorAll(".welcomeBoxTransistion");
 
