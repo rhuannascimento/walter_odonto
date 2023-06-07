@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
   document.addEventListener("DOMContentLoaded", function() {
-    var fadeInElements = document.querySelectorAll(".clinicFadeBox");
+    var fadeInElements = document.querySelectorAll(".fadeBox");
     
     function fadeIn() {
       fadeInElements.forEach(function(element) {
@@ -43,3 +43,10 @@ document.addEventListener("DOMContentLoaded", function() {
     fadeIn();
   });
   
+
+function redirecionarWpp(){
+  window.open("https://api.whatsapp.com/send?phone=5531987917321", "_blank");
+}
+function redirecionarInsta(){
+  window.open("https://instagram.com", "_blank");
+}

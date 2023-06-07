@@ -2,13 +2,8 @@ body{
     margin: 0;
     height: auto;
     width: 100%;
-    width: 100%;
     display: flex;
     flex-direction: column;
-}
-
-.teste{
-    height: 1000px;
 }
 
 @font-face {
@@ -26,9 +21,9 @@ body{
 
     display: flex;
     align-items: center;
-    column-gap: 500px;
+    column-gap: 200px;
 
-    padding: 0px 100px 0px 100px;
+    padding: 0px 80px 0px 80px;
 
     position: fixed;
     top: 0;
@@ -60,35 +55,36 @@ body{
 
 .welcomeBox{
     width: 100%;
-    height: 600px;
+    height:600px;
+    display: flex;
 }
 
 .welcomeText{
-    height: 98%;
-    width: 98%;
+    height: inherit;
+    width: 100%;
+    z-index: 2;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
+    row-gap: 7px;
+    
     color: #FFFFFF;
     font-family: "Nixie";
-    row-gap: 7px;
     font-size: 30pt;
     font-weight: 400;
-    background-color: #050a3010;
+
     padding: 5px;
+    background-color: #050a3027;
 }
 
 .welcomeBoxTransistion{
-    position: absolute;
+    position:absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
+    height: inherit;
     background-size:cover;
     background-position: center;
     opacity: 0;
@@ -105,9 +101,10 @@ body{
     border-style: solid;
     border-width: 1px;
     margin-top: 20px;
+    padding: 2px;
 }
 
-.buttonBox button{
+.buttonBox a{
     font-family: "Nixie";
     font-weight: 900;
     font-size: 15px;
@@ -115,6 +112,7 @@ body{
     border: none;
     background-color: transparent;
     color: #FFFFFF;
+    text-decoration: none;
 }
 
 .buttonBox:active{
@@ -161,64 +159,199 @@ body{
 }
 
 .servicesBox{
-    background-color: #FFFFFF;
-    height: 800px;
-    padding: 60px;
+    background-color: #ffffff;
+    height: auto;
+    padding-bottom: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     row-gap: 50px;
-    box-shadow: 0px 5px 8px rgba(0, 0, 0, 0.151);
-    z-index: 2;
 }
 
 .servicesTitle{
     font-family: "Nixie";
-    color: #050A30;
+    color: #050a30;
     font-size: 60px;
-    text-decoration: overline;
-    border-radius: 0px 10px 0px 10px;
+    text-align: center;
+    text-decoration: underline 3px;
 }
 
-
 .carousel{
-    width: 900px;
+    width: 80%;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.24);
 }
 
-
 .d-block{
-    width: 900px;
     height: 500px;
 }
 
-.clinic{
-    background-image: url("./assets/img/consultorio.JPG");
-    background-attachment: fixed;
+
+.doctorBox{
+
+    padding-right: 50px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    width: 100%;
     height: 600px;
+
+    background-image: url('./assets/img/walter.JPG');
+    background-attachment: fixed;
+
     background-size: cover;
+    background-position: top;
+}
+
+.fadeBox{
+    opacity: 0;
+    transition: opacity 2s ease;
+
+    background-color: #FFFFFF;
+    box-shadow: 1px 5px 8px rgba(0, 0, 0, 0.185);
+    border-radius: 0px 10px 0px 10px;
+    
+    height: 400px;
+    width: 600px;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 15px;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0px 60px 0px 60px;
+}
+
+.doctorTitle{
+    font-size: 30px;
+    text-decoration: underline 2px;
+    font-family: "Nixie";
+    color: #050a30;
+    font-weight: 600;
+}
+
+.doctorText{
+    font-family: "Nixie";
+    text-align: justify;
+    font-weight: 600;
+    color: #050a30;
+    font-size: 18px;
+}
+
+.fadeBox.active{
+    opacity: 1;
+}
+
+.contactBox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 80px 50px 80px;
+    row-gap: 30px;
+}
+
+.contactInsideBox{
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    column-gap: 20px;
+}
+
+.contactTitle{
+    margin-bottom: 5px;
+    font-family: "Nixie";
+    font-size: 60px;
+    color: #050a30;
+    text-decoration: underline 3px;
+}
+
+.contactText{
+    font-family: "Nixie";
+    font-size: 25px;
+    color: #050a30;
+    font-weight: 600;
+}
+
+.contactText2{
+    font-family: "Nixie";
+    font-size: 25px;
+    color: #03082b;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 25px;
+}
+
+.subtitleBox{
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 5px;
+}
+
+.linksComponent{
     display: flex;
     justify-content: center;
     align-items: center;
+    column-gap: 5px;
 }
 
-.clinicFadeBox{
-    font-size: 50px;
-    opacity: 0;
-    transition: opacity 2s ease;
-    width: 600px;
-    font-size: 25px;
-    padding: 20px;
-    background-color: #050a307e;
+.linksComponent a{
+    text-decoration: none;
     font-family: "Nixie";
-    color: #FFFFFF;
-    font-weight: 500;
-    text-align: center;
+    color: #0f1d8b;
+    font-weight: 600;
 }
 
-.clinicFadeBox.active{
-    opacity: 1;
+.linksComponent a:hover{
+    color: #001eff;
+}
+
+.fa-whatsapp{
+    color: green;
+}
+
+.fa-instagram{
+    color: rgb(255, 0, 119);
+}
+
+.fab{
+    cursor: pointer;
+}
+
+
+.foot{
+    width: 100%;
+    background-color: #050a30d0;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.foot img{
+    height: 70px;
+}
+
+.foot span{
+    font-size: 10px;
+    color: #FFFFFF;
 }
 
 @media screen and (max-width: 500px){
