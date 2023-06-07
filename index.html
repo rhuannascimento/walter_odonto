@@ -22,16 +22,16 @@
 
 <body>
     <div class="navbar">
-        <img class="navbarLogo" src="./assets/img/logoVertical.png"
+        <img class="navbarLogo" href="#welcome" onclick="sectionScroll(event)" src="./assets/img/logoVertical.png"
             alt="Logo Walter Corrêa Odontologia(um W circulado)" />
         <div class="navbarLinks">
-            <a href="#">Inicio</a>
-            <a href="#">Procedimentos</a>
-            <a href="#">Contatos</a>
+            <a href="#welcome" onclick="sectionScroll(event)">Inicio</a>
+            <a href="#services" onclick="sectionScroll(event)">Procedimentos</a>
+            <a href="#contact" onclick="sectionScroll(event)">Contatos</a>
         </div>
     </div>
 
-    <div class="welcomeBox">
+    <div class="welcomeBox" id="welcome">
         <div class="welcomeText">
             <span >MUITO MAIS QUE UMA</span>
             <span >CLÍNICA ODONTOLÓGICA</span>
@@ -56,7 +56,7 @@
             alt="Imagem de uma mesa de atendimento onde se encontra 2 dentistas conversnado" />
     </div>
 
-    <div class="servicesBox">
+    <div class="servicesBox" id="services">
 
         <span class="servicesTitle">Procedimentos</span>
 
@@ -155,7 +155,7 @@
 
     </div>
 
-    <div class="contactBox">
+    <div class="contactBox" id="contact">
 
         <span class="contactTitle">Contatos</span>
 

@@ -50,3 +50,11 @@ function redirecionarWpp(){
 function redirecionarInsta(){
   window.open("https://instagram.com", "_blank");
 }
+
+function sectionScroll(event) {
+  event.preventDefault();
+  
+  const secaoAlvo = document.querySelector(event.target.getAttribute('href'));
+  
+  secaoAlvo.scrollIntoView({ behavior: 'smooth' });
+}
