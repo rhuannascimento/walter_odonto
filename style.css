@@ -442,14 +442,15 @@ body{
         justify-content: center;
         padding-right: 0px;
         background-size: 800px;
-        background-position: -10px 290px;
+        background-position: -10px 400px;
     }
 
     .fadeBox{
         height: auto;
         width: 320px;
         row-gap: 5px;
-        padding: 10px 60px 10px 60px;
+        padding: 20px 60px 20px 60px;
+        background-color: #ffffffec;
     }
 
     .doctorTitle{
