@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-  if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+  if (userAgent.includes("iPhone") || userAgent.includes("iPad")) {
 
     document.querySelector(".doctorBox").style.backgroundPosirion = "-50px 300px";
 
