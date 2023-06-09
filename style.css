@@ -372,7 +372,7 @@ body{
 
     .welcomeBoxTransistion{
         background-size: 800px;
-        background-position: 0px 0px 150px;
+        background-position: -200px 0px;
     }
 
     .focusBox{
