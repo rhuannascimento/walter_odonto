@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
     
-  if (userAgent.includes("iPhone") || userAgent.includes("iPad")) {
-    document.querySelector(".doctorBox").style.backgroundPosition = "-50px 0px";
-  }
-  
     var images = [
       "./assets/img/welcome/img1.JPG",
       "./assets/img/welcome/img2.JPG",
