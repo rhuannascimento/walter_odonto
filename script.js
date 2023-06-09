@@ -1,4 +1,10 @@
 document.addEventListener("DOMContentLoaded", function() {
+    
+  if (/iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream) {
+
+    document.querySelector(".doctorBox").style.backgroundPosirion = "-50px 300px";
+
+  }
   
     var images = [
       "./assets/img/welcome/img1.JPG",
