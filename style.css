@@ -200,7 +200,7 @@ body{
     height: 600px;
 
     background-image: url('./assets/img/walter.JPG');
-    background-attachment: fixed;
+   /*background-attachment: fixed;*/
 
     background-size: cover;
     background-position: top;
@@ -441,8 +441,8 @@ body{
     .doctorBox{
         justify-content: center;
         padding-right: 0px;
-        background-size: 40%;
-        background-position: center;
+        background-size: 700px;
+        background-position: -100px 0px;
     }
 
     .fadeBox{
