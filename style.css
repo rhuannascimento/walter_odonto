@@ -355,6 +355,10 @@ body{
     color: #FFFFFF;
 }
 
+.map{
+    width: 650px;
+}
+
 @media screen and (max-width: 500px){
 
 
