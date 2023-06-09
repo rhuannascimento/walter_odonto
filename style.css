@@ -441,7 +441,7 @@ body{
     .doctorBox{
         justify-content: center;
         padding-right: 0px;
-        background-size: cover;
+        background-size: 800px;
         background-position: -10px 290px;
     }
 
