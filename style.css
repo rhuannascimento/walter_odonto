@@ -357,9 +357,6 @@ body{
 
 @media screen and (max-width: 500px){
 
-    html{
-        overflow-x: hidden;
-    }
 
     .navbar{
        flex-direction: column;
@@ -406,12 +403,16 @@ body{
         text-align: justify;
     }
 
+    .servicesBox{
+        row-gap: 15px;
+    }
+
     .servicesTitle{
         font-size: 40px;
     }
     
     .d-block{
-        height: 200px;
+        height: 300px;
     }
 
     .carousel-caption p, h5{
@@ -425,6 +426,45 @@ body{
 
     .carousel-caption p{
         margin-bottom: -5px;
+    }
+
+    .doctorBox{
+        justify-content: center;
+        padding-right: 0px;
+        background-size: cover;
+        background-position: -10px 290px;
+    }
+
+    .fadeBox{
+        height: auto;
+        width: 320px;
+        row-gap: 5px;
+        padding: 10px 60px 10px 60px;
+    }
+
+    .doctorTitle{
+        font-size: 20px;
+    }
+
+    .doctorText{
+        font-size: 15px;
+    }
+
+    .contactInsideBox{
+        flex-direction: column-reverse;
+    }
+
+    .contactText, .contactText2{
+        font-size: 20px;
+    }
+
+    .contactBox{
+        width: fit-content;
+        padding: 20px;
+    }
+
+    .phone{
+        width: 350px;
     }
 
 }

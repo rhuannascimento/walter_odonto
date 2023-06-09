@@ -18,6 +18,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
       document.querySelector(".focusRightImg").src = './assets/img/focusMobile.JPG';
 
+      document.querySelector(".map").width = "350";
 
     }
 
