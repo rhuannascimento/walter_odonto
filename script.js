@@ -19,6 +19,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
       document.querySelector(".map").width = "350";
 
+      document.querySelector(".doctorBox").style.backgroundImage = "url('./assets/img/walterMobile.JPG')";
+
     }
 
     var index = 0;
