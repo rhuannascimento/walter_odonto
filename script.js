@@ -17,8 +17,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
       document.querySelector(".focusRightImg").src = './assets/img/focusMobile.JPG';
 
-      document.querySelector(".map").width = "350";
-
       document.querySelector(".doctorBox").style.backgroundImage = "url('./assets/img/walterMobile.JPG')";
 
     }
