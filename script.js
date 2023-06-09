@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
   
     var images = [
       "./assets/img/welcome/img1.JPG",

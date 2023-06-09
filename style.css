@@ -441,8 +441,8 @@ body{
     .doctorBox{
         justify-content: center;
         padding-right: 0px;
-        background-size: 800px;
-        background-position: 10px;
+        background-size: 1100px;
+        background-position: -50px 100px;
     }
 
     .fadeBox{
