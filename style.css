@@ -467,6 +467,8 @@ body{
 
     .contactInsideBox{
         flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
     }
 
     .contactText, .contactText2{
