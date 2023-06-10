@@ -469,6 +469,7 @@ body{
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        column-gap: 0px;
     }
 
     .contactText, .contactText2{
