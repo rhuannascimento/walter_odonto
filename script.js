@@ -4,10 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
   var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
   if (isIOS) {
 
-
-    window.alert("versão ios");
-
-    document.querySelector(".doctorBox").style.backgroundPosition = "-100px 250px";
+    document.querySelector(".doctorBox").style.backgroundPosition = "-150px 150px";
 
   }
     
